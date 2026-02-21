@@ -1,0 +1,81 @@
+header {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.header-index {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-left,
+.header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.main-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 40px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.header-menu-right,
+.header-menu-left {
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.header-menu-left li,
+.header-menu-right li {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.header-menu-left li:hover,
+.header-menu-right li:hover {
+  color: #000;
+}
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.theme-switcher:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.1);
+}
+
+.theme-switcher img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}

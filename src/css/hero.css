@@ -1,0 +1,115 @@
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #333;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  width: 600px;
+}
+
+.hero-text h1 span {
+  color: #000;
+}
+
+.role {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #777;
+  line-height: 1.6;
+  max-width: 480px;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.btn-primary:hover {
+  background-color: #000;
+  border-color: #000;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+  border-color: #333;
+  background-color: #f9f9f9;
+}
+
+.hero-foto {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-foto img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}

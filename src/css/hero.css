@@ -1,4 +1,5 @@
 .hero {
+  font-family: "Inter", Arial, sans-serif;
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 20px;
@@ -10,15 +11,18 @@
 
 .hero-text {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-text h1 {
-  font-size: 3.5rem;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
   font-weight: 800;
   color: #333;
   line-height: 1.1;
   margin-bottom: 10px;
-  width: 600px;
+  max-width: 15ch;
+  width: 100%;
 }
 
 .hero-text h1 span {
@@ -41,10 +45,15 @@
   margin-bottom: 35px;
 }
 
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .hero-buttons {
   display: flex;
   gap: 15px;
-  cursor: pointer;
 }
 
 .btn-primary,
@@ -55,6 +64,8 @@
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 0.95rem;
+  display: inline-block;
+  text-align: center;
 }
 
 .btn-primary {
@@ -67,6 +78,11 @@
   background-color: #000;
   border-color: #000;
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
 }
 
 .btn-secondary {
@@ -78,6 +94,7 @@
 .btn-secondary:hover {
   border-color: #333;
   background-color: #f9f9f9;
+  transform: translateY(-2px);
 }
 
 .hero-foto {
@@ -91,6 +108,28 @@
   max-width: 450px;
   height: auto;
   border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  color: #777;
+  transition: all 0.3s ease;
+  font-size: 1.8rem;
+}
+
+.social-icon.linkedin:hover {
+  color: #0077b5;
+  transform: translateY(-3px);
+}
+
+.social-icon.github:hover {
+  color: #000;
+  transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {
@@ -100,16 +139,20 @@
     padding: 40px 20px;
   }
 
+  .hero-text h1 {
+    margin: 0 auto 10px auto;
+  }
+
   .hero-text p {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 35px auto;
+  }
+
+  .hero-actions {
+    align-items: center;
   }
 
   .hero-buttons {
     justify-content: center;
-  }
-
-  .hero-text h1 {
-    font-size: 2.5rem;
+    flex-wrap: wrap;
   }
 }

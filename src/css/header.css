@@ -1,3 +1,7 @@
+:root {
+  --primary-blue: #2546f0;
+}
+
 header {
   width: 100%;
   padding: 15px 0;
@@ -42,6 +46,10 @@ header {
   letter-spacing: -0.5px;
 }
 
+.highlight-name {
+  color: var(--primary-blue);
+}
+
 .header-menu-left,
 .header-menu-right {
   display: flex;
@@ -52,27 +60,22 @@ header {
   list-style: none;
 }
 
-.header-menu-left li,
-.header-menu-right li {
+.header-menu-left li a,
+.header-menu-right li a {
   font-size: 0.95rem;
   font-weight: 600;
   color: #666;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
   white-space: nowrap;
+  position: relative;
 }
 
-.header-menu-left li:hover,
-.header-menu-right li:hover {
-  color: #000;
-  transform: translateY(-2px);
-}
-
-.header-menu-left li:focus-visible,
-.header-menu-right li:focus-visible {
-  outline: 2px solid #333;
-  outline-offset: 4px;
-  border-radius: 4px;
+.header-menu-left li a:hover,
+.header-menu-right li a:hover {
+  color: var(--primary-blue);
 }
 
 .theme-switcher {

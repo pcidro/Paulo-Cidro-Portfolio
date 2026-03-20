@@ -8,19 +8,27 @@ const Header = () => {
       <div className="header-index">
         <div className="header-left">
           <ul className="header-menu-left">
-            <li>Início</li>
-            <li>Sobre</li>
-            <li>Projetos</li>
+            <li>
+              <a href="#inicio">Início</a>
+            </li>
+            <li>
+              <a href="#projetos">Projetos</a>
+            </li>
           </ul>
         </div>
 
-        <h1 className="main-title">Paulo Cidro</h1>
+        <h1 className="main-title">
+          Paulo <span className="highlight-name">Cidro</span>
+        </h1>
 
         <div className="header-right">
           <ul className="header-menu-right">
-            <li>Habilidades</li>
-            <li>Contato</li>
-            <li>Currículo</li>
+            <li>
+              <a href="#habilidades">Habilidades</a>
+            </li>
+            <li>
+              <a href="#contato">Contato</a>
+            </li>
           </ul>
           <div className="theme-switcher">
             <img src={Sun} alt="Mudar tema" />

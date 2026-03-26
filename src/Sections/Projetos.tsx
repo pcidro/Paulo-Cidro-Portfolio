@@ -1,19 +1,18 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt, faFire } from "@fortawesome/free-solid-svg-icons";
 import {
-  faExternalLinkAlt,
-  faCode,
-  faFire,
-} from "@fortawesome/free-solid-svg-icons";
-import {
+  faTypescript,
   faReact,
   faGithub,
   faHtml5,
   faCss3Alt,
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
-import "./css/projetos.css";
-import Orby from "./assets/orby.png";
+import "../css/projetos.css";
+import Orby from "../assets/orby.png";
+import gamesDb from "../assets/gamesdb.png";
+import giuliapsi from "../assets/giuapsi.png";
 
 const Projetos = () => {
   return (
@@ -25,51 +24,12 @@ const Projetos = () => {
           <div className="projeto-imagem-wrapper">
             <img
               className="imagem-projeto"
-              src=""
-              alt="Captura de tela do projeto"
-            />
-          </div>
-          <div className="projeto-conteudo">
-            <h2>Games DB</h2>
-            <p>
-              O Games DB é uma aplicação de gerenciamento e catalogação de
-              jogos, desenvolvida para permitir que entusiastas organizem sua
-              biblioteca pessoal e atribuam notas aos títulos jogados. O projeto
-              foi concebido para aplicar conceitos avançados de consumo de APIs
-              externas e persistência de dados em tempo real.
-            </p>
-            <div className="stacks">
-              <span className="stack-react">
-                <FontAwesomeIcon icon={faReact} /> React
-              </span>
-              <span className="stack-firebase">
-                <FontAwesomeIcon icon={faFire} /> Firebase Auth
-              </span>
-              <span className="stack-js">
-                <FontAwesomeIcon icon={faJs} /> JS
-              </span>
-            </div>
-            <div className="acess">
-              <a href="#deploy" className="btn-deploy">
-                <FontAwesomeIcon icon={faExternalLinkAlt} /> Deploy
-              </a>
-              <a href="#code" className="btn-code">
-                <FontAwesomeIcon icon={faGithub} /> Code
-              </a>
-            </div>
-          </div>
-        </li>
-
-        <li className="projeto-card">
-          <div className="projeto-imagem-wrapper">
-            <img
-              className="imagem-projeto"
               src={Orby}
               alt="Captura de tela do projeto"
             />
           </div>
           <div className="projeto-conteudo">
-            <h2>Orby E-Coomerce</h2>
+            <h2>Orby E-Commerce</h2>
             <p>
               A Orby é uma plataforma de e-commerce especializada em sneakers,
               desenvolvida para oferecer uma experiência de compra fluida,
@@ -82,7 +42,7 @@ const Projetos = () => {
                 <FontAwesomeIcon icon={faReact} /> React
               </span>
               <span className="stack-ts">
-                <FontAwesomeIcon icon={faCode} /> TypeScript
+                <FontAwesomeIcon icon={faTypescript} /> TypeScript
               </span>
               <span className="stack-firebase">
                 <FontAwesomeIcon icon={faFire} /> Firebase Auth
@@ -114,7 +74,7 @@ const Projetos = () => {
           <div className="projeto-imagem-wrapper">
             <img
               className="imagem-projeto"
-              src=""
+              src={giuliapsi}
               alt="Captura de tela do projeto"
             />
           </div>
@@ -139,23 +99,65 @@ const Projetos = () => {
               </span>
             </div>
             <div className="acess">
-              <a href="#deploy" className="btn-deploy">
+              <a
+                target="blank"
+                href="https://psicologagiuliarivolta.com.br/"
+                className="btn-deploy"
+              >
                 <FontAwesomeIcon icon={faExternalLinkAlt} /> Deploy
               </a>
-              <a href="#code" className="btn-code">
+              <a
+                target="_blank"
+                href="https://github.com/pcidro/psigiuliarivolta"
+                className="btn-code"
+              >
                 <FontAwesomeIcon icon={faGithub} /> Code
               </a>
             </div>
           </div>
         </li>
-
         <li className="projeto-card">
           <div className="projeto-imagem-wrapper">
             <img
               className="imagem-projeto"
-              src=""
+              src={gamesDb}
               alt="Captura de tela do projeto"
             />
+          </div>
+          <div className="projeto-conteudo">
+            <h2>Games DB</h2>
+            <p>
+              O Games DB é uma aplicação de gerenciamento e catalogação de
+              jogos, desenvolvida para permitir que entusiastas organizem sua
+              biblioteca pessoal e atribuam notas aos títulos jogados.
+            </p>
+            <div className="stacks">
+              <span className="stack-react">
+                <FontAwesomeIcon icon={faReact} /> React
+              </span>
+              <span className="stack-firebase">
+                <FontAwesomeIcon icon={faFire} /> Firebase Auth
+              </span>
+              <span className="stack-js">
+                <FontAwesomeIcon icon={faJs} /> JS
+              </span>
+            </div>
+            <div className="acess">
+              <a
+                target="_blank"
+                href="https://gamesdeb.netlify.app/"
+                className="btn-deploy"
+              >
+                <FontAwesomeIcon icon={faExternalLinkAlt} /> Deploy
+              </a>
+              <a
+                target="_blank"
+                href="https://github.com/pcidro/GamesDB"
+                className="btn-code"
+              >
+                <FontAwesomeIcon icon={faGithub} /> Code
+              </a>
+            </div>
           </div>
         </li>
       </ul>

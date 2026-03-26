@@ -1,18 +1,20 @@
-import React from "react";
-import Header from "./Header";
-import Hero from "./Hero";
-import Sobre from "./Sobre";
+import Header from "./Sections/Header";
+import Hero from "./Sections/Hero";
 import "./css/app.css";
-import Projetos from "./Projetos";
+import Projetos from "./Sections/Projetos";
+import Skills from "./Sections/Skills";
+import AboutSection from "./Sections/AboutSection";
+import { UiContextProvider } from "./Context/ThemeContext";
 
 const App = () => {
   return (
-    <div>
+    <UiContextProvider>
       <Header />
       <Hero />
       <Projetos />
-      <Sobre />
-    </div>
+      <Skills />
+      <AboutSection />
+    </UiContextProvider>
   );
 };
 

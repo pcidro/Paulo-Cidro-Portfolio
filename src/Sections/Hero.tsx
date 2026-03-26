@@ -1,6 +1,6 @@
 import React from "react";
-import "./css/hero.css";
-import PauloCidro from "./assets/Pcidro.png";
+import "../css/hero.css";
+import PauloCidro from "../assets/Pcidro.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faChevronDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -15,7 +15,7 @@ const Hero = () => {
           <span className="name">Paulo Cidro</span>
         </h1>
 
-        <h2 className="subtitle">Web Developer</h2>
+        <h2 className="subtitle">Front-End Developer</h2>
 
         <p className="hero-description">
           Sou Paulo Cidro, desenvolvedor apaixonado por tecnologia. Estudo

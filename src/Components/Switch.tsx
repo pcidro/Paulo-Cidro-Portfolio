@@ -1,23 +1,17 @@
+import React from "react";
 import "../css/switch.css";
 
 type switchProps = {
-  checked: boolean;
   onChange: () => void;
+  checked: boolean;
 };
 
-const Switch = ({ checked, onChange }: switchProps) => {
+const Switch = ({ onChange, checked }: switchProps) => {
   return (
-    <div className="switch">
-      <input
-        checked={checked}
-        id="toggle"
-        type="checkbox"
-        onChange={onChange}
-      />
-      <label className="toggle" htmlFor="toggle">
-        <i />
-      </label>
-    </div>
+    <label className="switch">
+      <input checked={checked} type="checkbox" onChange={onChange} />
+      <span className="slider" />
+    </label>
   );
 };
 

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../css/header.css";
-
 import { Theme } from "../Context/ThemeContext";
 import Switch from "../Components/Switch";
 

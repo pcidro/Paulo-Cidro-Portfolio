@@ -1,4 +1,3 @@
-import React from "react";
 import "../css/hero.css";
 import PauloCidro from "../assets/Pcidro.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

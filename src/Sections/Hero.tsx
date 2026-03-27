@@ -8,10 +8,10 @@ const Hero = () => {
   return (
     <section className="hero-container">
       <div className="hero-content">
-        <h1>
+        <h1 className="hero-title">
           <span className="greeting">Olá, eu sou</span>
           <br />
-          <span className="name">Paulo Cidro</span>
+          <span className="highlight-name">Paulo Cidro</span>
         </h1>
 
         <h2 className="subtitle">Front-End Developer</h2>

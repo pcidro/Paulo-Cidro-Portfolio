@@ -1,24 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --bg: white;
-  --text: black;
+  --bg: #ffffff;
+  --bg-secondary: #f9f9f9;
+  --text: #1a1a1a;
+  --text-secondary: #555555;
   --primary: #2546f0;
-  --primaryHover: #1a34b8;
-  --textprimary: #555555;
-  --borderImg: #1a2a6c;
+  --primary-hover: #1a34b8;
+  --border: #e8e8e8;
+  --shadow-sm: 0 4px 15px rgba(17, 17, 17, 0.08);
+  --shadow-md: 0 20px 40px rgba(17, 17, 17, 0.15);
+  --html-color: #ff6b35;
+  --css-color: #2563eb;
+  --js-color: #f7df1e;
+  --ts-color: #3178c6;
+  --react-color: #61dafb;
+  --tailwind-color: #06b6d4;
+  --switch-bg: #e0e0e0;
+  --switch-handle: #ffffff;
+  --switch-inner-shadow: rgba(0, 0, 0, 0.1);
+  --switch-handle-shadow: rgba(0, 0, 0, 0.2);
+  --switch-icon-bg: #d1d1d1;
 }
 
 body {
   background-color: var(--bg);
+  color: var(--text);
 }
 
 body.dark {
-  --bg: #121212;
+  --bg: #0a0a0a;
+  --bg-secondary: #1a1a1a;
+  --text: #ffffff;
+  --text-secondary: #b0b0b0;
   --primary: #a855f7;
-  --textprimary: #dadada;
-  --primaryHover: #8711f5;
-  --borderImg: #8711f5;
+  --primary-hover: #8711f5;
+  --border: #2a2a2a;
+  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 20px 60px rgba(0, 0, 0, 0.6);
+  --html-color: #ff7a59;
+  --css-color: #3b82f6;
+  --js-color: #fcd34d;
+  --ts-color: #60a5fa;
+  --react-color: #06dcff;
+  --tailwind-color: #0ff1f6;
+  --switch-bg: #0d0d0d;
+  --switch-handle: #1b1c1c;
+  --switch-inner-shadow: rgba(0, 0, 0, 0.5);
+  --switch-handle-shadow: rgba(255, 255, 255, 0.1);
+  --switch-icon-bg: #0d0d0d;
 }
 
 * {

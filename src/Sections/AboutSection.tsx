@@ -8,9 +8,8 @@ const AboutSection = () => {
       <div className="about-grid">
         <div className="about-text-content">
           <p>
-            Meu nome é Paulo Cidro, sou desenvolvedor front-end. Desde sempre
-            gostei muito de tecnologia, usando computador e videogame
-            praticamente o dia todo na minha infância.
+            Desde sempre gostei muito de tecnologia, usando computador e
+            videogame praticamente o dia todo na minha infância.
           </p>
           <p>
             Com o tempo, fui me aproximando mais da área, onde concluí minha

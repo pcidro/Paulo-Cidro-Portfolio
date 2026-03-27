@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "../css/header.css";
-import Sun from "../assets/sun.svg";
+
 import { Theme } from "../Context/ThemeContext";
-import Moon from "../assets/Moon.svg";
+import Switch from "../Components/Switch";
 
 const Header = () => {
   const [menuHamburguer, setMenuHamburger] = useState(false);
@@ -44,9 +44,7 @@ const Header = () => {
         </nav>
 
         <div className="header-actions">
-          <button onClick={() => setDark((t) => !t)} className="theme-switcher">
-            <img src={`${dark ? Moon : Sun}`} alt="Mudar tema" />
-          </button>
+          <Switch onChange={() => setDark((prev) => !prev)} checked={dark} />
 
           <button
             className={`hamburger ${menuHamburguer ? "active" : ""}`}

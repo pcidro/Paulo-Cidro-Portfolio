@@ -24,11 +24,7 @@ const SkillsSection = () => {
         <div className="skill-card">
           <div className="skill-card-header">
             <div className="skill-icon-wrapper">
-              <FontAwesomeIcon
-                icon={faHtml5}
-                className="skill-icon"
-                style={{ color: "#e34f26" }}
-              />
+              <FontAwesomeIcon icon={faHtml5} className="skill-icon html" />
             </div>
           </div>
           <h3 className="skill-name">HTML</h3>
@@ -41,11 +37,7 @@ const SkillsSection = () => {
         <div className="skill-card">
           <div className="skill-card-header">
             <div className="skill-icon-wrapper">
-              <FontAwesomeIcon
-                icon={faCss3Alt}
-                className="skill-icon"
-                style={{ color: "#1572b6" }}
-              />
+              <FontAwesomeIcon icon={faCss3Alt} className="skill-icon css" />
             </div>
           </div>
           <h3 className="skill-name">CSS</h3>
@@ -57,11 +49,7 @@ const SkillsSection = () => {
         <div className="skill-card">
           <div className="skill-card-header">
             <div className="skill-icon-wrapper">
-              <FontAwesomeIcon
-                icon={faJs}
-                className="skill-icon"
-                style={{ color: "#f7df1e" }}
-              />
+              <FontAwesomeIcon icon={faJs} className="skill-icon js" />
             </div>
           </div>
           <h3 className="skill-name">JavaScript</h3>
@@ -72,11 +60,7 @@ const SkillsSection = () => {
         <div className="skill-card">
           <div className="skill-card-header">
             <div className="skill-icon-wrapper">
-              <FontAwesomeIcon
-                icon={faTypescript}
-                className="skill-icon"
-                style={{ color: "#3178c6" }}
-              />
+              <FontAwesomeIcon icon={faTypescript} className="skill-icon ts" />
             </div>
           </div>
           <h3 className="skill-name">TypeScript</h3>
@@ -89,11 +73,7 @@ const SkillsSection = () => {
         <div className="skill-card">
           <div className="skill-card-header">
             <div className="skill-icon-wrapper">
-              <FontAwesomeIcon
-                icon={faReact}
-                className="skill-icon"
-                style={{ color: "#61dafb" }}
-              />
+              <FontAwesomeIcon icon={faReact} className="skill-icon react" />
             </div>
           </div>
           <h3 className="skill-name">React</h3>
@@ -108,8 +88,7 @@ const SkillsSection = () => {
             <div className="skill-icon-wrapper">
               <FontAwesomeIcon
                 icon={faTailwindCss}
-                className="skill-icon"
-                style={{ color: "#06b6d4" }}
+                className="skill-icon tailwind"
               />
             </div>
           </div>

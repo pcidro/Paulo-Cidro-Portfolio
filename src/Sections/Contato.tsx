@@ -17,7 +17,7 @@ const Contato = () => {
         <h2 className="contact-title">Contato</h2>
         <div className="contact-grid">
           <a
-            href="https://www.linkedin.com/in/paulo-henrique-707110179/"
+            href="https://www.linkedin.com/in/paulocidro/"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-card"

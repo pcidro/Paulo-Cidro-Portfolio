@@ -50,7 +50,7 @@ const Footer = () => {
           <h3 className="footer-subtitle">Redes Sociais</h3>
           <div className="footer-social-links">
             <a
-              href="https://www.linkedin.com/in/paulo-henrique-707110179/"
+              href="https://www.linkedin.com/in/paulocidro/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon-wrapper"

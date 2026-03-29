@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { createContext, useContext, useRef } from "react";
 
 type iScrollContext = {
   heroRef: React.RefObject<HTMLElement | null>;
@@ -8,10 +8,10 @@ type iScrollContext = {
   scrolltoSection: (ref: React.RefObject<HTMLElement | null>) => void;
 };
 
-const UiContext = React.createContext<iScrollContext | null>(null);
+const UiContext = createContext<iScrollContext | null>(null);
 
 export const Scroll = () => {
-  const context = React.useContext(UiContext);
+  const context = useContext(UiContext);
   if (!context) throw new Error("useContext deve estar dentro do Provider");
   return context;
 };

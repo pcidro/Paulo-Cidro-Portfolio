@@ -1,11 +1,12 @@
+import { faGlobe, faSchool } from "@fortawesome/free-solid-svg-icons";
 import "../css/about.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const AboutSection = () => {
   return (
     <section className="about-container">
       <div className="about-content-wrapper">
         <h2 className="about-title">Sobre Mim e Formação</h2>
-
         <div className="about-grid">
           <div className="about-text-content">
             <p>
@@ -24,17 +25,16 @@ const AboutSection = () => {
               foco em me tornar um desenvolvedor full stack no futuro.
             </p>
           </div>
-
           <div className="about-card-wrapper">
             <div className="education-card">
               <div className="education-card-glow"></div>
-
               <div className="education-card-content">
                 <div className="education-header">
+                  <div className="about-icon-wrapper">
+                    <FontAwesomeIcon icon={faSchool} />
+                  </div>
                   <h3>Análise e Desenvolvimento de Sistemas</h3>
-                  <span className="education-badge">Tecnólogo</span>
                 </div>
-
                 <div className="education-details">
                   <p className="education-institution">
                     UNIP - Universidade Paulista
@@ -43,6 +43,21 @@ const AboutSection = () => {
                     <span className="education-status-dot"></span>
                     <p className="education-year">Conclusão: 2021</p>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="education-card">
+              <div className="education-card-glow"></div>
+              <div className="education-card-content">
+                <div className="education-header">
+                  <div className="about-icon-wrapper">
+                    <FontAwesomeIcon icon={faGlobe} />
+                  </div>
+                  <h3>Idiomas</h3>
+                </div>
+                <div className="education-details">
+                  <p className="education-institution">Inglês Avançado</p>
                 </div>
               </div>
             </div>

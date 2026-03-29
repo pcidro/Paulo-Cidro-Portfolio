@@ -106,6 +106,10 @@
   color: var(--ts-color);
 }
 
+.skill-icon.angular {
+  color: var(--angular-color);
+}
+
 .skill-icon.react {
   color: var(--react-color);
 }

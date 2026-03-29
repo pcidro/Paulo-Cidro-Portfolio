@@ -15,7 +15,7 @@ import giuliapsi from "../assets/giuapsi.png";
 
 const Projetos = () => {
   return (
-    <section className="projetos-container">
+    <section id="projetos" className="projetos-container">
       <h1 className="projetos-titulo">Projetos</h1>
 
       <ul className="projetos-grid">

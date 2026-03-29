@@ -6,7 +6,7 @@ import { faChevronDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   return (
-    <section className="hero-container">
+    <section id="hero" className="hero-container">
       <div className="hero-content">
         <h1 className="hero-title">
           <span className="greeting">Olá, eu sou</span>
@@ -27,7 +27,7 @@ const Hero = () => {
           <a href="#projetos" className="btn-primary">
             Ver Projetos
           </a>
-          <a href="mailto:paulocidro@gmail.com" className="btn-secondary">
+          <a href="mailto:paulohcidro@gmail.com" className="btn-secondary">
             <FontAwesomeIcon icon={faEnvelope} /> Entre em contato
           </a>
         </div>

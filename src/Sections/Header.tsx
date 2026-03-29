@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "../css/header.css";
 import { Theme } from "../Context/ThemeContext";
 import Switch from "../Components/Switch";
@@ -8,36 +8,29 @@ const Header = () => {
   const { setDark, dark } = Theme();
 
   const toggleMenu = () => setMenuHamburger(!menuHamburguer);
-  const closeMenu = () => setMenuHamburger(false);
 
   return (
     <header>
       <div className="header-index">
         <h1 className="main-title">
-          Paulo <span className="highlight-name">Cidro</span>
+          <a href="#hero">
+            Paulo <span className="highlight-name">Cidro</span>
+          </a>
         </h1>
 
         <nav className={`nav-menu ${menuHamburguer ? "active" : ""}`}>
           <ul className="header-menu">
             <li>
-              <a onClick={closeMenu} href="#inicio">
-                Início
-              </a>
+              <a href="#hero">Início</a>
             </li>
             <li>
-              <a onClick={closeMenu} href="#projetos">
-                Projetos
-              </a>
+              <a href="#projetos">Projetos</a>
             </li>
             <li>
-              <a onClick={closeMenu} href="#habilidades">
-                Habilidades
-              </a>
+              <a href="#skills">Habilidades</a>
             </li>
             <li>
-              <a onClick={closeMenu} href="#contato">
-                Contato
-              </a>
+              <a href="contato">Contato</a>
             </li>
           </ul>
         </nav>

@@ -30,7 +30,7 @@ const Header = () => {
               <a href="#skills">Habilidades</a>
             </li>
             <li>
-              <a href="contato">Contato</a>
+              <a href="#contato">Contato</a>
             </li>
           </ul>
         </nav>

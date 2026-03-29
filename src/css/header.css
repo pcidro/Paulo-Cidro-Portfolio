@@ -51,7 +51,7 @@ header {
 .header-menu li a {
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--textprimary);
+  color: var(--text-secondary);
   text-decoration: none;
   cursor: pointer;
   transition: color 0.3s ease;

@@ -50,7 +50,7 @@ const Footer = () => {
           <h3 className="footer-subtitle">Redes Sociais</h3>
           <div className="footer-social-links">
             <a
-              href="https://linkedin.com/in/paulocidro"
+              href="https://www.linkedin.com/in/paulo-henrique-707110179/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon-wrapper"
@@ -59,7 +59,7 @@ const Footer = () => {
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a
-              href="https://github.com/paulocidro"
+              href="https://github.com/pcidro"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon-wrapper"
@@ -68,7 +68,7 @@ const Footer = () => {
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5511987698148"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon-wrapper"

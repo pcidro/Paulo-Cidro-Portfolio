@@ -5,9 +5,18 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import "../css/footer.css";
+import { Scroll } from "../Context/ScrollContext";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const {
+    scrolltoSection,
+    heroRef,
+    projetosRef,
+    skillsRef,
+    contatoRef,
+    sobreRef,
+  } = Scroll();
 
   return (
     <footer className="footer-container">
@@ -24,22 +33,42 @@ const Footer = () => {
           <h3 className="footer-subtitle">Navegação</h3>
           <ul className="footer-nav-list">
             <li>
-              <a href="#home" className="footer-link">
-                Home
+              <a
+                onClick={() => scrolltoSection(heroRef)}
+                className="footer-link"
+              >
+                Inicio
               </a>
             </li>
             <li>
-              <a href="#sobre" className="footer-link">
-                Sobre Mim
+              <a
+                onClick={() => scrolltoSection(sobreRef)}
+                className="footer-link"
+              >
+                Sobre
               </a>
             </li>
             <li>
-              <a href="#projetos" className="footer-link">
+              <a
+                onClick={() => scrolltoSection(skillsRef)}
+                className="footer-link"
+              >
+                Habilidades
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => scrolltoSection(projetosRef)}
+                className="footer-link"
+              >
                 Projetos
               </a>
             </li>
             <li>
-              <a href="#contato" className="footer-link">
+              <a
+                onClick={() => scrolltoSection(contatoRef)}
+                className="footer-link"
+              >
                 Contato
               </a>
             </li>

@@ -1,10 +1,12 @@
 import { faGlobe, faSchool } from "@fortawesome/free-solid-svg-icons";
 import "../css/about.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Scroll } from "../Context/ScrollContext";
 
 const AboutSection = () => {
+  const { sobreRef } = Scroll();
   return (
-    <section className="about-container">
+    <section ref={sobreRef} className="about-container">
       <div className="about-content-wrapper">
         <h2 className="about-title">Sobre Mim e Formação</h2>
         <div className="about-grid">

@@ -6,6 +6,7 @@ type iScrollContext = {
   skillsRef: React.RefObject<HTMLElement | null>;
   contatoRef: React.RefObject<HTMLElement | null>;
   scrolltoSection: (ref: React.RefObject<HTMLElement | null>) => void;
+  sobreRef: React.RefObject<HTMLElement | null>;
 };
 
 const UiContext = createContext<iScrollContext | null>(null);
@@ -21,6 +22,7 @@ export const ScrollProvider = ({ children }: React.PropsWithChildren) => {
   const projetosRef = useRef<HTMLElement>(null);
   const skillsRef = useRef<HTMLElement>(null);
   const contatoRef = useRef<HTMLElement>(null);
+  const sobreRef = useRef<HTMLElement>(null);
 
   const scrolltoSection = (ref: React.RefObject<HTMLElement | null>) => {
     if (ref && ref.current) {
@@ -33,7 +35,14 @@ export const ScrollProvider = ({ children }: React.PropsWithChildren) => {
 
   return (
     <UiContext.Provider
-      value={{ heroRef, projetosRef, skillsRef, contatoRef, scrolltoSection }}
+      value={{
+        heroRef,
+        projetosRef,
+        skillsRef,
+        contatoRef,
+        scrolltoSection,
+        sobreRef,
+      }}
     >
       {children}
     </UiContext.Provider>

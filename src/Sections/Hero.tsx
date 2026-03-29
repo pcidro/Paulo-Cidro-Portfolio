@@ -3,10 +3,12 @@ import PauloCidro from "../assets/Pcidro.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faChevronDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Scroll } from "../Context/ScrollContext";
 
 const Hero = () => {
+  const { heroRef } = Scroll();
   return (
-    <section id="hero" className="hero-container">
+    <section ref={heroRef} className="hero-container">
       <div className="hero-content">
         <h1 className="hero-title">
           <span className="greeting">Olá, eu sou</span>

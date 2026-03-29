@@ -1,11 +1,19 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "../css/header.css";
 import { Theme } from "../Context/ThemeContext";
 import Switch from "../Components/Switch";
+import { Scroll } from "../Context/ScrollContext";
 
 const Header = () => {
   const [menuHamburguer, setMenuHamburger] = useState(false);
   const { setDark, dark } = Theme();
+  const { scrolltoSection, heroRef, projetosRef, skillsRef, contatoRef } =
+    Scroll();
+
+  const handleNavClick = (ref: React.RefObject<HTMLElement | null>) => {
+    scrolltoSection(ref);
+    setMenuHamburger(false);
+  };
 
   const toggleMenu = () => setMenuHamburger(!menuHamburguer);
 
@@ -13,7 +21,7 @@ const Header = () => {
     <header>
       <div className="header-index">
         <h1 className="main-title">
-          <a href="#hero">
+          <a onClick={() => handleNavClick(heroRef)}>
             Paulo <span className="highlight-name">Cidro</span>
           </a>
         </h1>
@@ -21,16 +29,16 @@ const Header = () => {
         <nav className={`nav-menu ${menuHamburguer ? "active" : ""}`}>
           <ul className="header-menu">
             <li>
-              <a href="#hero">Início</a>
+              <a onClick={() => handleNavClick(heroRef)}>Início</a>
             </li>
             <li>
-              <a href="#projetos">Projetos</a>
+              <a onClick={() => handleNavClick(projetosRef)}>Projetos</a>
             </li>
             <li>
-              <a href="#skills">Habilidades</a>
+              <a onClick={() => handleNavClick(skillsRef)}>Habilidades</a>
             </li>
             <li>
-              <a href="#contato">Contato</a>
+              <a onClick={() => handleNavClick(contatoRef)}>Contato</a>
             </li>
           </ul>
         </nav>

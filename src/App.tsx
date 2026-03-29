@@ -7,18 +7,21 @@ import AboutSection from "./Sections/AboutSection";
 import { UiContextProvider } from "./Context/ThemeContext";
 import Contato from "./Sections/Contato";
 import Footer from "./Sections/Footer";
+import { ScrollProvider } from "./Context/ScrollContext";
 
 const App = () => {
   return (
-    <UiContextProvider>
-      <Header />
-      <Hero />
-      <Projetos />
-      <Skills />
-      <AboutSection />
-      <Contato />
-      <Footer />
-    </UiContextProvider>
+    <ScrollProvider>
+      <UiContextProvider>
+        <Header />
+        <Hero />
+        <Projetos />
+        <Skills />
+        <AboutSection />
+        <Contato />
+        <Footer />
+      </UiContextProvider>
+    </ScrollProvider>
   );
 };
 

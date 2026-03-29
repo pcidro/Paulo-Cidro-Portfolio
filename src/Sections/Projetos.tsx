@@ -12,10 +12,12 @@ import "../css/projetos.css";
 import Orby from "../assets/orby.png";
 import gamesDb from "../assets/gamesdb.png";
 import giuliapsi from "../assets/giuapsi.png";
+import { Scroll } from "../Context/ScrollContext";
 
 const Projetos = () => {
+  const { projetosRef } = Scroll();
   return (
-    <section id="projetos" className="projetos-container">
+    <section ref={projetosRef} className="projetos-container">
       <h1 className="projetos-titulo">Projetos</h1>
 
       <ul className="projetos-grid">

@@ -7,10 +7,12 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Scroll } from "../Context/ScrollContext";
 
 const Contato = () => {
+  const { contatoRef } = Scroll();
   return (
-    <section id="contato" className="contact-container">
+    <section ref={contatoRef} className="contact-container">
       <div className="contact-content-wrapper">
         <h2 className="contact-title">Contato</h2>
         <div className="contact-grid">

@@ -9,10 +9,12 @@ import {
   faAngular,
 } from "@fortawesome/free-brands-svg-icons";
 import "../css/skills.css";
+import { Scroll } from "../Context/ScrollContext";
 
 const SkillsSection = () => {
+  const { skillsRef } = Scroll();
   return (
-    <section id="skills" className="skills-container">
+    <section ref={skillsRef} className="skills-container">
       <div className="skills-header">
         <h2 className="skills-title">Minhas Skills</h2>
         <p className="skills-subtitle">

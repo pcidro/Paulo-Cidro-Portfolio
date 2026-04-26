@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "../css/skills.css";
 import { Scroll } from "../Context/ScrollContext";
+import nextJs from "../assets/nextjs-icon-svgrepo-com.svg";
 
 const SkillsSection = () => {
   const { skillsRef } = Scroll();
@@ -112,6 +113,20 @@ const SkillsSection = () => {
           </div>
           <h3 className="skill-name">Tailwind CSS</h3>
           <p className="skill-description">Utility-first CSS</p>
+          <div className="card-border"></div>
+        </div>
+        {/*  */}
+        <div className="skill-card">
+          <div className="skill-card-header">
+            <div className="skill-icon-wrapper">
+              <img src={nextJs} className="skill-icon-img" alt="" />
+            </div>
+          </div>
+          <h3 className="skill-name">Next Js</h3>
+          <p className="skill-description">
+            {" "}
+            SSR, SSG, rotas e otimização de performance
+          </p>
           <div className="card-border"></div>
         </div>
       </div>

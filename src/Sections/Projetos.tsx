@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt, faFire } from "@fortawesome/free-solid-svg-icons";
+
 import {
   faTypescript,
   faReact,
@@ -7,11 +8,13 @@ import {
   faHtml5,
   faCss3Alt,
   faJs,
+  faTailwindCss,
 } from "@fortawesome/free-brands-svg-icons";
 import "../css/projetos.css";
 import Orby from "../assets/orby.png";
 import gamesDb from "../assets/gamesdb.png";
 import giuliapsi from "../assets/giuapsi.png";
+import barberSchedule from "../assets/BarberSchedule.png";
 import { Scroll } from "../Context/ScrollContext";
 
 const Projetos = () => {
@@ -154,6 +157,52 @@ const Projetos = () => {
               <a
                 target="_blank"
                 href="https://github.com/pcidro/GamesDB"
+                className="btn-code"
+              >
+                <FontAwesomeIcon icon={faGithub} /> Code
+              </a>
+            </div>
+          </div>
+        </li>
+        <li className="projeto-card">
+          <div className="projeto-imagem-wrapper">
+            <img
+              className="imagem-projeto"
+              src={barberSchedule}
+              alt="Captura de tela do projeto"
+            />
+          </div>
+          <div className="projeto-conteudo">
+            <h2>Barber Schedule</h2>
+            <p>
+              O Barber Schedule é um sistema de agendamento para barbearias
+              desenvolvido para oferecer uma experiência simples e intuitiva
+              tanto para o barbeiro quanto para o cliente. O sistema permite
+              organizar atendimentos por períodos e garante a integridade dos
+              dados através de diversas regras de negócio.
+            </p>
+            <div className="stacks">
+              <span className="stack-react">
+                <FontAwesomeIcon icon={faReact} /> React
+              </span>
+              <span className="stack-ts">
+                <FontAwesomeIcon icon={faTypescript} /> TypeScript
+              </span>
+              <span className="stack-ts">
+                <FontAwesomeIcon icon={faTailwindCss} /> Tailwind Css
+              </span>
+            </div>
+            <div className="acess">
+              <a
+                target="_blank"
+                href="https://barbersschedule.netlify.app/"
+                className="btn-deploy"
+              >
+                <FontAwesomeIcon icon={faExternalLinkAlt} /> Deploy
+              </a>
+              <a
+                target="_blank"
+                href="https://github.com/pcidro/Sistema-de-agendamentos"
                 className="btn-code"
               >
                 <FontAwesomeIcon icon={faGithub} /> Code

@@ -14,6 +14,12 @@
   margin-right: auto;
 }
 
+.skill-icon-img {
+  width: 2.2rem;
+  height: 2.2rem;
+  object-fit: contain;
+}
+
 .skills-title {
   font-family: "Poppins";
   font-size: clamp(2.5rem, 4vw, 3.5rem);

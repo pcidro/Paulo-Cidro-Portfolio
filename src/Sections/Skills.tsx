@@ -6,7 +6,6 @@ import {
   faJs,
   faTypescript,
   faTailwindCss,
-  faAngular,
 } from "@fortawesome/free-brands-svg-icons";
 import "../css/skills.css";
 import { Scroll } from "../Context/ScrollContext";
@@ -69,22 +68,6 @@ const SkillsSection = () => {
           <h3 className="skill-name">TypeScript</h3>
           <p className="skill-description">
             Type safety, interfaces e arquitetura robusta
-          </p>
-          <div className="card-border"></div>
-        </div>
-
-        <div className="skill-card">
-          <div className="skill-card-header">
-            <div className="skill-icon-wrapper">
-              <FontAwesomeIcon
-                icon={faAngular}
-                className="skill-icon angular"
-              />
-            </div>
-          </div>
-          <h3 className="skill-name">Angular</h3>
-          <p className="skill-description">
-            Aplicações SPA robustas com TypeScript
           </p>
           <div className="card-border"></div>
         </div>

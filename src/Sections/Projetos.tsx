@@ -12,6 +12,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "../css/projetos.css";
 import Orby from "../assets/orby.png";
+import anaVeiga from "../assets/heroanaveiga.jpg";
+import nextJs from "../assets/nextjs-icon-svgrepo-com.svg";
 import gamesDb from "../assets/gamesdb.png";
 import giuliapsi from "../assets/giuapsi.png";
 import barberSchedule from "../assets/BarberSchedule.png";
@@ -78,12 +80,60 @@ const Projetos = () => {
           <div className="projeto-imagem-wrapper">
             <img
               className="imagem-projeto"
+              src={anaVeiga}
+              alt="Captura de tela do projeto Ana Veiga Psicanalista"
+            />
+          </div>
+          <div className="projeto-conteudo">
+            <h2>Ana Veiga Psicanalista</h2>
+            <p>
+              O projeto Ana Veiga Psicanalista é um site institucional
+              desenvolvido para uma cliente real, com foco em presença digital,
+              divulgação dos serviços da profissional e captação de novos
+              pacientes. A aplicação inclui blog integrado, CMS para
+              gerenciamento de conteúdo, SEO otimizado e deploy em produção com
+              domínio próprio.
+            </p>
+            <div className="stacks">
+              <span className="stack-react">
+                <FontAwesomeIcon icon={faReact} /> React
+              </span>
+              <span className="stack-ts">
+                <FontAwesomeIcon icon={faTypescript} /> TypeScript
+              </span>
+              <span className="stack-next">
+                <img src={nextJs} /> Next.js
+              </span>
+            </div>
+            <div className="acess">
+              <a
+                target="_blank"
+                href="https://www.anaveigapsicanalista.com.br/"
+                className="btn-deploy"
+              >
+                <FontAwesomeIcon icon={faExternalLinkAlt} /> Deploy
+              </a>
+              <a
+                target="_blank"
+                href="https://github.com/pcidro/AnaVeigaPsico"
+                className="btn-code"
+              >
+                <FontAwesomeIcon icon={faGithub} /> Code
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li className="projeto-card">
+          <div className="projeto-imagem-wrapper">
+            <img
+              className="imagem-projeto"
               src={giuliapsi}
               alt="Captura de tela do projeto"
             />
           </div>
           <div className="projeto-conteudo">
-            <h2>Site Completo Psicologa</h2>
+            <h2>Giulia Rivolta Psicologa</h2>
             <p>
               Um site feito para uma cliente real. O projeto é completamente
               responsivo, garantindo uma navegação fluida em desktops, tablets e

@@ -16,7 +16,7 @@ const Hero = () => {
           <span className="highlight-name">Paulo Cidro</span>
         </h1>
 
-        <h2 className="subtitle">Front-End Developer</h2>
+        <h2 className="subtitle">Full Stack Developer</h2>
 
         <p className="hero-description">
           Sou Paulo Cidro, desenvolvedor apaixonado por tecnologia. Estudo

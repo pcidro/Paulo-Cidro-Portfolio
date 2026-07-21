@@ -56,6 +56,9 @@
 .projeto-card:nth-child(5) {
   animation-delay: 0.5s;
 }
+.projeto-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
 
 .projeto-card:hover {
   transform: translateY(-10px);
@@ -164,6 +167,12 @@
 }
 .stack-next img {
   filter: var(--next-icon-filter, none);
+}
+.stack-node svg {
+  color: #5fa04e;
+}
+.stack-postgresql svg {
+  color: #4169e1;
 }
 
 .acess {

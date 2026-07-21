@@ -124,6 +124,14 @@
   color: var(--tailwind-color);
 }
 
+.skill-icon.node {
+  color: #5fa04e;
+}
+
+.skill-icon.postgresql {
+  color: #4169e1;
+}
+
 .skill-icon-wrapper {
   width: 70px;
   height: 70px;

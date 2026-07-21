@@ -6,6 +6,7 @@ type IUiContext = {
 };
 
 const UiContext = React.createContext<IUiContext | null>(null);
+const THEME_STORAGE_KEY = "theme";
 
 export const Theme = () => {
   const context = React.useContext(UiContext);
@@ -14,13 +15,21 @@ export const Theme = () => {
 };
 
 export const UiContextProvider = ({ children }: React.PropsWithChildren) => {
-  const [dark, setDark] = React.useState(false);
+  const [dark, setDark] = React.useState(() => {
+    try {
+      return localStorage.getItem(THEME_STORAGE_KEY) === "dark";
+    } catch {
+      return false;
+    }
+  });
 
   React.useEffect(() => {
-    if (dark) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
+    document.body.classList.toggle("dark", dark);
+
+    try {
+      localStorage.setItem(THEME_STORAGE_KEY, dark ? "dark" : "light");
+    } catch {
+      // Mantém a troca de tema funcionando mesmo se o armazenamento for bloqueado.
     }
   }, [dark]);
 

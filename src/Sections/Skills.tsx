@@ -6,7 +6,9 @@ import {
   faJs,
   faTypescript,
   faTailwindCss,
+  faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import "../css/skills.css";
 import { Scroll } from "../Context/ScrollContext";
 import nextJs from "../assets/nextjs-icon-svgrepo-com.svg";
@@ -109,6 +111,35 @@ const SkillsSection = () => {
           <p className="skill-description">
             {" "}
             SSR, SSG, rotas e otimização de performance
+          </p>
+          <div className="card-border"></div>
+        </div>
+
+        <div className="skill-card">
+          <div className="skill-card-header">
+            <div className="skill-icon-wrapper">
+              <FontAwesomeIcon icon={faNodeJs} className="skill-icon node" />
+            </div>
+          </div>
+          <h3 className="skill-name">Node.js</h3>
+          <p className="skill-description">
+            APIs, regras de negócio e aplicações back-end
+          </p>
+          <div className="card-border"></div>
+        </div>
+
+        <div className="skill-card">
+          <div className="skill-card-header">
+            <div className="skill-icon-wrapper">
+              <FontAwesomeIcon
+                icon={faDatabase}
+                className="skill-icon postgresql"
+              />
+            </div>
+          </div>
+          <h3 className="skill-name">PostgreSQL</h3>
+          <p className="skill-description">
+            Modelagem, consultas e persistência de dados relacionais
           </p>
           <div className="card-border"></div>
         </div>

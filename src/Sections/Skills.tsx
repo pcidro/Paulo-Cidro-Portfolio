@@ -8,7 +8,6 @@ import {
   faTailwindCss,
   faNodeJs,
   faGithub,
-  faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faServer, faCodeBranch, faFire } from "@fortawesome/free-solid-svg-icons";
 import "../css/skills.css";

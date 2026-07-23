@@ -8,7 +8,7 @@ import { Scroll } from "../Context/ScrollContext";
 const Hero = () => {
   const { heroRef } = Scroll();
   return (
-    <section ref={heroRef} className="hero-container">
+    <section id="inicio" ref={heroRef} className="hero-container">
       <div className="hero-content">
         <h1 className="hero-title">
           <span className="greeting">Olá, eu sou</span>
@@ -16,18 +16,22 @@ const Hero = () => {
           <span className="highlight-name">Paulo Cidro</span>
         </h1>
 
-        <h2 className="subtitle">Full Stack Developer</h2>
+        <h2 className="subtitle">Desenvolvedor Full Stack</h2>
 
         <p className="hero-description">
-          Sou Paulo Cidro, desenvolvedor apaixonado por tecnologia. Estudo
-          programação e transformo ideias em interfaces modernas, funcionais e
-          profissionais. Sempre busco aprender mais, explorar novas ferramentas
-          e criar soluções criativas que realmente façam a diferença.
+          Desenvolvedor Full Stack com foco em React, Next.js e TypeScript. Desenvolvo interfaces responsivas e integro aplicações a APIs REST construídas com Node.js, Express, Prisma e PostgreSQL.
         </p>
 
         <div className="hero-actions">
           <a href="#projetos" className="btn-primary">
             Ver Projetos
+          </a>
+          <a
+            href="/curriculo-paulo-cidro.pdf"
+            download
+            className="btn-secondary"
+          >
+            Baixar currículo
           </a>
           <a href="mailto:paulohcidro@gmail.com" className="btn-secondary">
             <FontAwesomeIcon icon={faEnvelope} /> Entre em contato
@@ -36,7 +40,7 @@ const Hero = () => {
 
         <div className="social-media">
           <a
-            href="https://www.linkedin.com/in/paulo-henrique-707110179/"
+            href="https://www.linkedin.com/in/paulocidro/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon linkedin"

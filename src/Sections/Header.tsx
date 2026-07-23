@@ -7,7 +7,7 @@ import { Scroll } from "../Context/ScrollContext";
 const Header = () => {
   const [menuHamburguer, setMenuHamburger] = useState(false);
   const { setDark, dark } = Theme();
-  const { scrolltoSection, heroRef, projetosRef, skillsRef, contatoRef } =
+  const { scrolltoSection, heroRef, projetosRef, skillsRef, contatoRef, sobreRef } =
     Scroll();
 
   const handleNavClick = (ref: React.RefObject<HTMLElement | null>) => {
@@ -21,7 +21,7 @@ const Header = () => {
     <header>
       <div className="header-index">
         <h1 className="main-title">
-          <a onClick={() => handleNavClick(heroRef)}>
+          <a href="#inicio" onClick={(e) => { e.preventDefault(); handleNavClick(heroRef); }}>
             Paulo <span className="highlight-name">Cidro</span>
           </a>
         </h1>
@@ -29,26 +29,33 @@ const Header = () => {
         <nav className={`nav-menu ${menuHamburguer ? "active" : ""}`}>
           <ul className="header-menu">
             <li>
-              <a onClick={() => handleNavClick(heroRef)}>Início</a>
+              <a href="#inicio" onClick={(e) => { e.preventDefault(); handleNavClick(heroRef); }}>Início</a>
             </li>
             <li>
-              <a onClick={() => handleNavClick(projetosRef)}>Projetos</a>
+              <a href="#projetos" onClick={(e) => { e.preventDefault(); handleNavClick(projetosRef); }}>Projetos</a>
             </li>
             <li>
-              <a onClick={() => handleNavClick(skillsRef)}>Habilidades</a>
+              <a href="#habilidades" onClick={(e) => { e.preventDefault(); handleNavClick(skillsRef); }}>Habilidades</a>
             </li>
             <li>
-              <a onClick={() => handleNavClick(contatoRef)}>Contato</a>
+              <a href="#sobre" onClick={(e) => { e.preventDefault(); handleNavClick(sobreRef); }}>Sobre</a>
+            </li>
+            <li>
+              <a href="#contato" onClick={(e) => { e.preventDefault(); handleNavClick(contatoRef); }}>Contato</a>
             </li>
           </ul>
         </nav>
 
         <div className="header-actions">
-          <Switch onChange={() => setDark((prev) => !prev)} checked={dark} />
+          <div className="switch-container" aria-label="Alternar tema">
+            <Switch onChange={() => setDark((prev) => !prev)} checked={dark} />
+          </div>
 
           <button
             className={`hamburger ${menuHamburguer ? "active" : ""}`}
             onClick={toggleMenu}
+            aria-label="Abrir menu"
+            aria-expanded={menuHamburguer}
           >
             <span className="bar"></span>
             <span className="bar"></span>

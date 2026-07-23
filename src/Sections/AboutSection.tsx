@@ -1,4 +1,4 @@
-import { faGlobe, faSchool } from "@fortawesome/free-solid-svg-icons";
+import { faLanguage, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import "../css/about.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Scroll } from "../Context/ScrollContext";
@@ -6,25 +6,19 @@ import { Scroll } from "../Context/ScrollContext";
 const AboutSection = () => {
   const { sobreRef } = Scroll();
   return (
-    <section ref={sobreRef} className="about-container">
+    <section id="sobre" ref={sobreRef} className="about-container">
       <div className="about-content-wrapper">
         <h2 className="about-title">Sobre Mim e Formação</h2>
         <div className="about-grid">
           <div className="about-text-content">
             <p>
-              Desde sempre gostei muito de tecnologia, usando computador e
-              videogame praticamente o dia todo na minha infância.
+              Sou formado em Análise e Desenvolvimento de Sistemas pela Universidade Paulista e atuo como desenvolvedor web freelancer desde 2025, criando e publicando soluções para clientes reais.
             </p>
             <p>
-              Com o tempo, fui me aproximando mais da área, onde concluí minha
-              graduação. Meu foco é transformar ideias em projetos que ajudem
-              pessoas e negócios a se conectarem melhor com o público através do
-              meu código.
+              Trabalho principalmente com React, Next.js e TypeScript no front-end, além de Node.js, Express, Prisma e PostgreSQL no back-end. Entre meus projetos, desenvolvi o Easy Pizza, um sistema Full Stack com autenticação JWT, controle de acesso, gerenciamento de produtos e acompanhamento de pedidos.
             </p>
             <p>
-              Estou sempre estudando e evoluindo, buscando melhorar tanto na
-              parte técnica quanto na forma de pensar e resolver problemas, com
-              foco em me tornar um desenvolvedor full stack no futuro.
+              Busco minha primeira oportunidade em uma equipe de desenvolvimento como Desenvolvedor Front-end ou Full Stack Júnior, onde eu possa contribuir com aplicações bem estruturadas e continuar evoluindo tecnicamente.
             </p>
           </div>
           <div className="about-card-wrapper">
@@ -33,7 +27,7 @@ const AboutSection = () => {
               <div className="education-card-content">
                 <div className="education-header">
                   <div className="about-icon-wrapper">
-                    <FontAwesomeIcon icon={faSchool} />
+                    <FontAwesomeIcon icon={faGraduationCap} />
                   </div>
                   <h3>Análise e Desenvolvimento de Sistemas</h3>
                 </div>
@@ -54,12 +48,12 @@ const AboutSection = () => {
               <div className="education-card-content">
                 <div className="education-header">
                   <div className="about-icon-wrapper">
-                    <FontAwesomeIcon icon={faGlobe} />
+                    <FontAwesomeIcon icon={faLanguage} />
                   </div>
                   <h3>Idiomas</h3>
                 </div>
                 <div className="education-details">
-                  <p className="education-institution">Inglês Avançado</p>
+                  <p className="education-institution">Inglês intermediário — leitura técnica e conversação</p>
                 </div>
               </div>
             </div>

@@ -12,9 +12,12 @@ import { Scroll } from "../Context/ScrollContext";
 const Contato = () => {
   const { contatoRef } = Scroll();
   return (
-    <section ref={contatoRef} className="contact-container">
+    <section id="contato" ref={contatoRef} className="contact-container">
       <div className="contact-content-wrapper">
         <h2 className="contact-title">Contato</h2>
+        <p className="contact-subtitle" style={{ textAlign: 'center', marginBottom: '40px', color: 'var(--text-secondary)', fontSize: '1.1rem' }}>
+          Disponível para oportunidades Front-end e Full Stack Júnior, presenciais, híbridas ou remotas.
+        </p>
         <div className="contact-grid">
           <a
             href="https://www.linkedin.com/in/paulocidro/"

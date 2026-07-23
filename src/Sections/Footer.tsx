@@ -24,8 +24,7 @@ const Footer = () => {
         <div className="footer-brand-section">
           <h2 className="footer-title">Paulo Cidro</h2>
           <p className="footer-description">
-            Front-End Developer - Transformando ideias em interfaces modernas e
-            funcionais.
+            Desenvolvedor Full Stack — criando interfaces modernas e aplicações web completas.
           </p>
         </div>
 

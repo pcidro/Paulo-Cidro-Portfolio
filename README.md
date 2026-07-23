@@ -21,7 +21,7 @@ Portfólio pessoal construído para apresentar meus projetos e minha trajetória
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/pcidro/portfolio.git
+   git clone https://github.com/pcidro/Paulo-Cidro-Portfolio.git
    ```
 
 2. Acesse a pasta do projeto:

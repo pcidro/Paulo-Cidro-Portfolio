@@ -61,7 +61,7 @@ export default function Footer() {
         {/* Bottom strip */}
         <div className="footer-bottom">
           <span>
-            &copy; {currentYear} Paulo Cidro. Todos os direitos reservados.
+            &copy; {currentYear} Paulo Cidro, Todos os direitos reservados.
           </span>
         </div>
       </div>

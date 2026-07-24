@@ -1,6 +1,4 @@
 import { useRef } from "react";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
@@ -11,36 +9,8 @@ export default function Hero() {
   const { heroRef } = useScroll();
   const containerRef = useRef<HTMLDivElement>(null);
 
-  useGSAP(() => {
-    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReduced || !containerRef.current) return;
-
-    const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-
-    tl.fromTo(".hero-title", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.55 })
-      .fromTo(".hero-desc", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45 }, "-=0.2")
-      .fromTo(".hero-ctas", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4 }, "-=0.15")
-      .fromTo(".hero-meta", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.35 }, "-=0.1")
-      .fromTo(".hero-bg-img", { opacity: 0, scale: 1.02 }, { opacity: 1, scale: 1, duration: 0.7 }, "-=0.5");
-  }, { scope: containerRef });
-
   return (
     <section id="inicio" ref={heroRef} className="hero-section">
-      {/* Ambient glow */}
-      <div
-        aria-hidden="true"
-        style={{
-          position: "absolute",
-          top: "25%",
-          left: "10%",
-          width: 500,
-          height: 500,
-          background: "rgba(139,92,246,0.04)",
-          borderRadius: "50%",
-          filter: "blur(120px)",
-          pointerEvents: "none",
-        }}
-      />
 
       <div ref={containerRef} style={{ position: "relative", zIndex: 10 }}>
 

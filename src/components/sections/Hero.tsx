@@ -4,6 +4,8 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { useScroll } from "../../hooks/useScroll";
 import { socialLinks } from "../../data/portfolio";
+import heroDesktopImg from "../../assets/herodesktop.webp";
+import heroMobileImg from "../../assets/heromobile.webp";
 
 export default function Hero() {
   const { heroRef } = useScroll();
@@ -17,7 +19,7 @@ export default function Hero() {
         {/* ── DESKTOP HERO ── */}
         <div className="hero-desktop-wrap">
           <img
-            src="/herodesktop.png"
+            src={heroDesktopImg}
             alt="Paulo Cidro, desenvolvedor Full Stack"
             className="hero-bg-img"
             width={1920}
@@ -94,7 +96,7 @@ export default function Hero() {
         <div className="hero-mobile-container">
           {/* Main vertical portrait image */}
           <img
-            src="/heromobile.png"
+            src={heroMobileImg}
             alt="Paulo Cidro, desenvolvedor Full Stack"
             className="hero-mobile-img"
             width={600}

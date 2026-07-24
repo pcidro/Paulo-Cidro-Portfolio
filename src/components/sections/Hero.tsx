@@ -4,8 +4,8 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { useScroll } from "../../hooks/useScroll";
 import { socialLinks } from "../../data/portfolio";
-import heroDesktopImg from "../../assets/herodesktop.webp";
-import heroMobileImg from "../../assets/heromobile.webp";
+import heroDesktopImg from "../../assets/desktop_webp.webp";
+import heroMobileImg from "../../assets/mobile_webp.webp";
 
 export default function Hero() {
   const { heroRef } = useScroll();

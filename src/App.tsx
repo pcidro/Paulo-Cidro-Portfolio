@@ -1,28 +1,31 @@
-import Header from "./Sections/Header";
-import Hero from "./Sections/Hero";
-import "./css/app.css";
-import Projetos from "./Sections/Projetos";
-import Skills from "./Sections/Skills";
-import AboutSection from "./Sections/AboutSection";
-import { UiContextProvider } from "./Context/ThemeContext";
-import Contato from "./Sections/Contato";
-import Footer from "./Sections/Footer";
-import { ScrollProvider } from "./Context/ScrollContext";
+import { ScrollProvider } from "./hooks/useScroll";
+import Header from "./components/sections/Header";
+import Hero from "./components/sections/Hero";
+import Credibility from "./components/sections/Credibility";
+import Projects from "./components/sections/Projects";
+import Skills from "./components/sections/Skills";
+import About from "./components/sections/About";
+import WorkApproach from "./components/sections/WorkApproach";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/sections/Footer";
 
-const App = () => {
+export default function App() {
   return (
     <ScrollProvider>
-      <UiContextProvider>
-        <Header />
+      <a href="#main-content" className="skip-link">
+        Pular para o conteúdo
+      </a>
+      <Header />
+      <main id="main-content">
         <Hero />
-        <Projetos />
+        <Credibility />
+        <Projects />
         <Skills />
-        <AboutSection />
-        <Contato />
-        <Footer />
-      </UiContextProvider>
+        <About />
+        <WorkApproach />
+        <Contact />
+      </main>
+      <Footer />
     </ScrollProvider>
   );
-};
-
-export default App;
+}
